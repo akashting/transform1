@@ -22,7 +22,7 @@
 				<a href="index.html" class="nav-logo">Logo</a>
 				<ul class="nav-menu">
 					<li class="nav-item">
-						<a href="about.html" class="nav-link">About</a>
+						<a href="about.html" class="active1 nav-link">About</a>
 					</li>
 					<li class="nav-item">
 						<a href="#" class="nav-link">Services</a>
@@ -34,6 +34,7 @@
 						<a href="#" class="nav-link">Contact</a>
 					</li>
 				</ul>
+
 				<div class="hamburger">
 					<span class="bar"></span>
 					<span class="bar"></span>
@@ -58,5 +59,89 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="template_container">
+			<div class="temlate_inner">
+				<div class="template_wrap">
+					<div class="template">
+						<div class="template_image">
+							<img src="image/About/profile_01.jpg" alt="" />
+						</div>
+						<div class="template_text">
+							<h1>Name</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+								corporis, velit voluptate, libero facilis voluptatem
+								exercitationem, dolor qui officiis explicabo quaerat blanditiis
+								quasi rem voluptates nam deleniti sapiente iste. Dolorem.
+							</p>
+						</div>
+					</div>
+					<div class="template">
+						<div class="template_image">
+							<img src="image/About/profile_01.jpg" alt="" />
+						</div>
+						<div class="template_text">
+							<h1>Name</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+								corporis, velit voluptate, libero facilis voluptatem
+								exercitationem, dolor qui officiis explicabo quaerat blanditiis
+								quasi rem voluptates nam deleniti sapiente iste. Dolorem.
+							</p>
+						</div>
+					</div>
+					<div class="template">
+						<div class="template_image">
+							<img src="image/About/profile_01.jpg" alt="" />
+						</div>
+						<div class="template_text">
+							<h1>Name</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+								corporis, velit voluptate, libero facilis voluptatem
+								exercitationem, dolor qui officiis explicabo quaerat blanditiis
+								quasi rem voluptates nam deleniti sapiente iste. Dolorem.
+							</p>
+						</div>
+					</div>
+					<div class="template">
+						<div class="template_image">
+							<img src="image/About/profile_01.jpg" alt="" />
+						</div>
+						<div class="template_text">
+							<h1>Name</h1>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+								corporis, velit voluptate, libero facilis voluptatem
+								exercitationem, dolor qui officiis explicabo quaerat blanditiis
+								quasi rem voluptates nam deleniti sapiente iste. Dolorem.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			const hamburger = document.querySelector(".hamburger");
+			const navMenu = document.querySelector(".nav-menu");
+
+			hamburger.addEventListener("click", mobileMenu);
+
+			function mobileMenu() {
+				hamburger.classList.toggle("active");
+				navMenu.classList.toggle("active");
+			}
+
+			const navLink = document.querySelectorAll(".nav-link");
+
+			navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+			function closeMenu() {
+				hamburger.classList.remove("active");
+				navMenu.classList.remove("active");
+			}
+		</script>
 	</body>
 </html>
