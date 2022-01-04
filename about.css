@@ -112,27 +112,52 @@ header{
     }
 }
 
-.template_container{
-    width: 1186px;
+.tab_container{
+    padding: 30px 50px;
+    
 }
 
-.template_wrap{
+.tab_wrap{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.template{
-    width: 33.33%;
-    padding: 20px;
-}
-
-
-.template_container .template_wrap .template .img{
-    height: 250px;
-    width: 250px;
+.tab{
+    width: 25%;
+    padding: 10px;
+    position: relative;
 }
 
 
+.tab_container .tab_wrap .tab img{
+    width: 100%;
+}
+
+.tab_container .tab_wrap .tab .tab_text{
+    width: 70%;
+    text-align: justify;
+    padding: 10px;
+    font-size: 15px;
+    position: absolute;
+    opacity: 0;
+}
+
+.tab_container .tab_wrap .tab .tab_text h1{
+    font-size: 25px;
+    transform: translateY(3%);
+    opacity: 0;
+}
+
+.tab_container .tab_wrap .tab .tab_text p{
+    font-size: 13px;
+    opacity: 0;
+}
+
+.tab:hover .tab_text, .tab:hover h1, .tab:hover p, .tab:hover {
+    opacity: 1;
+    transform: translate(3%);
+}
 
 @media screen and (max-width:768px) {
     .nav-menu {
